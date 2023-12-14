@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.nav{
+    background-color: rgb(184, 254, 184);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 40px;
+    width: 40px;
+    
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav ul li{
+    display: inline-block;
+    padding: 10px ;
+    
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons span{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+}
+.bannertext{
+    flex: 1;
+
+}
+.bannertext h1{
+    font-size: 1.5rem;
+
+}
+.bannertext h1{
+    font-size: 0.9rem;
+
+}
+.bannertext p{
+    padding: 10px 0px;
+
+}
+
+.bannertext a{
+    text-decoration: none;
+    background-color: rgb(108, 205, 108);
+    padding: 5px 10px;
+    display: inline-block;
+    color: brown;
+    border: 2px solid green;
+    border-radius: 4px;
+    transition: all 0.5s;
+    
+}
+
+.bannertext a:hover{
+    background-color: green;
+    
+
+}
+.bannertext{
+    flex: 1;
+    
+}
+
+.bannerimage {
+    flex: 1;
+
+}
+.bannerimage img{
+   
+    width: 100%;
+}
+
+.featured{
+    padding: 40px 60px ;
+}
+
+.featured h1{
+    text-align: center;
+    font-size: 1.9rem
+    ;
+    padding: 20px 0px ;
+    color: green;
+}
+.cards{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap: 0.8rem;
+   
+
+.card{
+   /* width: 200px; */
+   border: 3px solid green;
+   border-radius: 8px;
+   padding: 10px 10px;
+   text-align: center;
+}
+}
+
+
+.cardimg img{
+    width: 150px;
+}
+.card h3{
+    color: green;
+}
+.card p{
+    padding: 5px 0px;
+}
+.card a{
+    text-decoration: none;
+    background-color: rgb(108, 205, 108);
+    padding: 5px 10px;
+    display: inline-block;
+    color: brown;
+    border: 2px solid green;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
+.card a:hover{
+    background-color: green;
+    
+}
+
+@media only screen and (max-width: 450px){
+    html{
+        font-size: 16px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1,1fr) ;
+    }
+
+}
+@media only screen and (min-width:450px) and (max-width: 850px){
+    html{
+        font-size: 17px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr) ;
+    }
+    
+}
+@media only screen and (min-width:850px) and (max-width: 1250px){
+    html{
+        font-size: 19px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr) ;
+    }
+    
+}
+@media only screen and (min-width: 1250px){
+    html{
+        font-size: 20px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(5,1fr) ;
+    }
+}
+
